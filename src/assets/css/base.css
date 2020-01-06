@@ -1,0 +1,56 @@
+@import "./normalize.css";
+:root {
+  --color-text: #666666;
+  --color-high-text: #FF5777;
+  --color-tint: #FF8198;
+  --color-background: #FFFFFF;
+  --font-size: .186667rem;
+  --line-height: 1.5;
+}
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  /*禁止用户鼠标在页面是哪个选中文字或图片*/
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 100vw;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.clear-fix::after {
+  clear: both;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

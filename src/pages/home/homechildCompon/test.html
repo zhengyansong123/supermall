@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>测试</title>
+
+  </head>
+  <body>
+   <script>
+    //  var  a= 10;
+    //  console.log( ++a + ++a);
+    //  console.log(a)
+
+    //  function intoWB(age) {
+    //    if(age>18){
+    //      console.log("你的年龄是"+age+"岁,可以进网吧")
+    //    }else{
+    //      console.log("不可以进网吧")
+    //    }
+    //  }
+    //  intoWB(10);
+    //  let m =10;
+    //  console.log(m<5&&++m)
+    //  console.log(m)
+    //  let name1 = prompt("请输入您的名字");
+    //  if(name1 =="刘德华"){
+    //    alert("恭喜"+ name1+"中了"+ (name1.length+2)+"元钱")
+    //  }else{
+    //    alert("没有中奖")
+    //  }
+    //  let num =6;
+    //  let result =parseFloat(num >10?num: "0"+num);
+    //  console.log(result)
+    //  function num1(n) {
+    //    for(let i=1;i<=n;i++){
+    //      console.log("次数是"+n+"次")
+    //    }
+    //  };
+    //  num1(4)
+    // let str = '';
+    // for(let i=1;i<=9;i++){
+    //   for(let j=1;j<=i;j++){
+    //     str += j + '*' + i + '=' + i * j + '\t';
+    //   };
+    //   str += '\n';
+    // }
+    // console.log(str);
+    // var str = '';
+    // var sep = '|';
+    // let arr = ["red","green","orange"];
+    // for (let i of arr) {
+    //   str += i + sep;
+    // };
+    // console.log(str)
+    
+    // let arr = [10,90,36,2,0,1,66,999];
+    // let brr = [];
+    // // let brr = arr.filter(v=>v>20);
+    // for (let i of arr) {
+    //   if (i>20) {
+    //     // console.log(i);
+    //     brr.push(i)
+    //   }
+    // }
+    // console.log(brr)
+    // let str = '';
+    // for (let i = 1;i <=9;i++) {
+    //   for (let j = 1; j <= i;j++) {
+    //     str += j + '*' + i + '=' + i * j + '\t';
+    //   };
+    //   str += '\n'
+    // };
+    // console.log(str)
+    // function gernum(num1,num2) {
+    //   // return [num1,num2]
+    // };
+    // console.log(gernum(1, 2))
+
+    function getDay() {
+      var year = prompt("请输入年份");
+      if (isRun(year)) {
+        alert(year + "年" +"是闰年，2月份有29天");
+      }else{
+        alert(year + "年" + "是平年，2月份有28天");
+      }
+    };
+     getDay();
+
+     function isRun(year) {
+        var flag = false ;
+        if(year % 4 ==0 && year % 100 != 0 || year % 400 ==0) {
+          flag = true;
+        };
+        return flag;
+     }
+   </script>
+  </body>
+</html>

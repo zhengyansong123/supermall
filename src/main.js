@@ -18,6 +18,5 @@ router.beforeEach((to,from,next) => {
 new Vue({
   el: '#app',
   router,
-  mode: "history",
   render: h => h(App)
 })

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Maintabbar from "./components/Maintabbar.vue";
+import Maintabbar from "./components/content/Maintabbar/Maintabbar.vue";
 
 export default {
   name: 'App',
@@ -17,6 +17,6 @@ export default {
 </script>
 
 <style>
-@import "./assets/css/base";
+@import "assets/css/base.css";
 
 </style>
